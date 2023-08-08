@@ -6,24 +6,39 @@
   <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
   <link rel="stylesheet"  href="./global.css">
   <title>CV Alexey Pukhalskiy</title>
+  <script defer src="./index.js"></script>
 </head>
 <body class="body">
-  <header class="header">
-    <div class="container">
-      <img class="header-photo" src="./assets/photoCV.jpg" alt="photo for resume">
-      <div class="header-content">
-        <nav class="menu">
-          <a class="menu-link" href="#">ABOUT</a>
-          <a class="menu-link" href="#">PROJECTS</a>
-          <a class="menu-link" href="#">SKILLS</a>
-          <a class="menu-link" href="#">CONTACTS</a>
-        </nav>
-        <div class="header-info">
-          <h1 class="header-info__fio">ALEXEY PUKHALSKIY</h1>
-          <h2 class="header-info_work">FRONT-END DEVELOPER</h2>
+  <div class="body-wrapper">
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-photo-wraper">
+          <img class="header-photo" src="./assets/photoCV.jpg" alt="photo for resume">
+        </div>
+
+        <div class="header-content">
+          <nav class="menu" id="menu">
+            <a class="menu__link" href="#">ABOUT</a>
+            <a class="menu__link" href="#">PROJECTS</a>
+            <a class="menu__link" href="#">SKILLS</a>
+            <a class="menu__link" href="#">CONTACTS</a>
+          </nav>
+          <div class="header__burger">
+            <button class="header__burger-btn" id="burger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          
+          <div class="header-info">
+            <h1 class="header-info__fio">ALEXEY PUKHALSKIY</h1>
+            <h2 class="header-info_work">FRONT-END DEVELOPER</h2>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
+  </div>
+  
 </body>
 </html>
