@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
   <link rel="stylesheet"  href="./global.css">
+  <link rel="stylesheet"  href="./main-content.css">
   <title>CV Alexey Pukhalskiy</title>
   <script defer src="./index.js"></script>
 </head>
@@ -18,10 +19,10 @@
 
         <div class="header-content">
           <nav class="menu" id="menu">
-            <a class="menu__link" href="#">ABOUT</a>
-            <a class="menu__link" href="#">PROJECTS</a>
-            <a class="menu__link" href="#">SKILLS</a>
-            <a class="menu__link" href="#">CONTACTS</a>
+            <a class="link" href="#">ABOUT</a>
+            <a class="link" href="#">PROJECTS</a>
+            <a class="link" href="#">SKILLS</a>
+            <a class="link" href="#">CONTACTS</a>
           </nav>
           <div class="header__burger">
             <button class="header__burger-btn" id="burger-menu">
@@ -38,6 +39,86 @@
         </div>
       </div>
     </header>
+    <div class="main-content">
+      <div class="container">
+        <aside class="aside">
+          <section class="education">
+            <h2 class="education__title" >EDUCATION</h2>
+            <div class="edication__text">
+                The Belarusian State of Informatics and Radioelectronics
+                <p class="education__faculty">Faculty of Computer-Aided Design
+                  <p class="education-specialization">programmer,business analyst</p>
+                </p>
+            </div>
+            <h2 class="education__title" >RS School</h2>
+            <div class="education-school">
+              <a class="link education__link" href="https://rs.school/js/">JS/FE 2023Q(in process)</a>
+            </div>
+          </section>
+          <section>
+            <h2 class="education__title">SKILLS</h2>
+            <div class="skills-wrapper">
+              <div class="skill">
+                <img class="skill__view" src="./assets/html.svg" alt="html">
+                <p class="skill__name">HTML</p>
+              </div>
+              <div class="skill">
+                <img class="skill__view" src="./assets/css.svg" alt="css">
+                <p class="skill__name">CSS</p>
+              </div>
+              <div class="skill">
+                <img class="skill__view" src="./assets/sass.svg" alt="sass">
+                <p class="skill__name">SASS</p>
+              </div>
+              <div class="skill">
+                <img class="skill__view" src="./assets/js.svg" alt="js">
+                <p class="skill__name">JavaScript</p>
+              </div>
+              <div class="skill">
+                <img class="skill__view" src="./assets/react.svg" alt="react">
+                <p class="skill__name">React</p>
+              </div>
+              <div class="skill">
+                <img class="skill__view" src="./assets/git.svg" alt="github">
+                <p class="skill__name">GitHub</p>
+              </div>
+              <div class="skill">
+                <img class="skill__view" src="./assets/figma.svg" alt="figma">
+                <p class="skill__name">Figma</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 class="education__title">CONTACTS</h2>
+            <div class="contacts-wrapper">
+              <a class="link contacts__link" href="tel:+375292427756">Phone</a>
+              <a class="link contacts__link" href="mailto:lesikpuhalskij@gmail.com">E-mail</a>
+              <a class="link contacts__link" href="https://t.me/alexPukhalskiy">Telegram</a>
+            </div>
+          </section>
+        </aside>
+        <main class="main">
+          <section class="about">
+            <h2 class="about-title">ABOUT ME</h2>
+            <div class="about-information">
+              <p>
+                I'am a third year student from IT University with a great desire to get new experience and knowledge in programming.
+                Currently studying at RS school and working on the final group project.
+                It gives me abilities how to organize and divide responsibilities among the team members.
+              </p>
+              <h3 class="about__languages">LANGUAGES:</h3>
+              <ul class="about__list">
+                <li>Russian - native speaker</li>
+                <li>English - B1/B2</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h2 class="about-title">PET PROJECTS</h2>
+          </section>
+        </main>
+      </div>
+    </div>
   </div>
   
 </body>
