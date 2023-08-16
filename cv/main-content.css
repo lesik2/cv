@@ -1,5 +1,4 @@
 .main-content{
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -11,7 +10,11 @@
   display: flex;
   flex-direction: column;
 }
-
+.container-main{
+  display: flex;
+  padding:0;
+  background-color: #202026;
+}
 .education{
   display: flex;
   flex-direction: column;
@@ -79,16 +82,19 @@
   width: 80px;
 }
 .main{
-  padding: 20px 30px 10px 20px;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   color: #000000;
   width: 72.7%;
 }
+.pet-projects{
+  margin: 0px 30px 0px 20px;
+}
 .about{
   display: flex;
   flex-direction: column;
+  margin: 20px 30px 0px 20px;
 }
 .about-title{
   margin: 0;
@@ -113,4 +119,216 @@
   margin-left: 30px;
   list-style: circle;
   font-size: 20px;
+}
+.projects-wrapper{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 290px;
+  background-color: #202026;
+  border-radius: 0 0 25px 25px;
+
+}
+.project__link{
+  transition: transform 0.3s ease-in-out;
+}
+.project__view{
+  transition: border-radius 0.3s ease-in-out;
+  height: 150px;
+  width: 290px;
+}
+.project__link:hover{
+  transform: scale(1.1);
+}
+.project__link:hover .project__view{
+  border-radius: 25px;
+}
+.project__title{
+  text-align: center;
+  margin: 0px 0px 5px 0;
+  font-size: 24px;
+}
+.project__description{
+  font-size: 19px;
+  background-color: #fecb00;
+  text-align: justify;
+  padding: 10px 5px 5px 5px;
+}
+.project__skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 10px;
+}
+.project__skill{
+  width: 45px;
+}
+.footer{
+  width: 72.7%;
+  display: flex;
+  font-size: 40px;
+  align-items: center;
+  justify-content: space-around;
+  height: 110px;
+  background-color: #fecb00;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.footer>p{
+  margin-bottom: 0;
+}
+.footer__view{
+  width: 75px;
+  transition: transform 0.3s ease-in-out,filter 0.3s ease-in-out;
+}
+.footer__view:hover{
+  transform: scale(1.1);
+  filter: invert(99%) sepia(5%) saturate(44%) hue-rotate(322deg) brightness(115%) contrast(100%);
+}
+@media (max-width: 920px) {
+  .project{
+    width: 250px;
+  }
+  .footer{
+    font-size: 30px;
+  }
+  .pet-projects{
+    margin: 0px 10px 0px 10px;
+  }
+}
+@media (max-width: 820px) {
+  .edication__text{
+    font-size: 19px;
+  }
+  .edication__text>p{
+    font-size: 20px;
+  }
+  .education__link{
+    font-size: 20px;
+  }
+  
+}
+@media (max-width: 750px) {
+ 
+  .container-main{
+    flex-direction: column;
+  }
+  .aside{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+  }
+ .edication__text{
+    text-align: justify;
+    width: 100%;
+    font-size: 24px;
+ }
+ .edication__text>p{
+  font-size: 22px;
+}
+.education__link{
+  font-size: 24px;
+}
+.education-school{
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+  .skills-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 40px;
+    padding: 0px 100px 0px 140px;
+  }
+
+  .contacts-wrapper{
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+
+  }
+  .main{
+    width: 100%;
+  }
+  .pet-projects{
+    margin-bottom: 150px;
+  }
+  .footer{
+    width: 100%;
+  }
+}
+@media (max-width: 555px) {
+  .header-photo-wraper{
+    width: 40%;
+  }
+  .projects-wrapper{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer__view{
+    width: 60px;
+  }
+  .footer{
+    height: 80px;
+    font-size: 25px;
+  }
+  .skills-wrapper{
+    padding: 0px 40px 0px 40px;
+  }
+}
+@media (max-width: 430px) {
+  .header-photo-wraper{
+    width: 70%;
+  }
+  .edication__text{
+    font-size: 20px;
+ }
+  .edication__text>p{
+    font-size: 20px;
+  }
+  .about-information{
+    font-size: 20px;
+  }
+  .footer__view{
+    width: 45px;
+  }
+  .footer{
+    font-size: 22px;
+  }
+  .skills-wrapper{
+    padding: 0px 10px 0px 10px;
+  }
+}
+@media (max-width: 367px){
+  .about-information{
+    font-size: 18px;
+  }
+  .footer{
+    height: 60px;
+    font-size: 18px;
+  }
+  .pet-projects {
+    margin-bottom: 100px;
+  }
+  .footer__view{
+    width: 35px;
+  }
+}
+@media (max-width: 290px){
+
+  .footer{
+    font-size: 16px;
+  }
+  .footer__view{
+    width: 30px;
+  }
 }
