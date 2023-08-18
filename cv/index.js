@@ -3,9 +3,6 @@ document.addEventListener("DOMContentLoaded",()=>{
     document.getElementById('header').classList.toggle('open');
   })
 })
-document.getElementById('menu').addEventListener('click',(event)=>{
-  event._isClickWithinMenu=true;
-})
 document.getElementById('burger-menu').addEventListener('click',(event)=>{
   event._isClickWithinMenu=true;
 })

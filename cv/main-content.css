@@ -3,9 +3,9 @@
   justify-content: center;
 }
 .aside{
-  width: 27.3%;
+  width: 28.6%;
   padding: 20px 0 0 25px;
-  background-color: #202026;
+  background-color: #b3b3ff;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -14,6 +14,7 @@
   display: flex;
   padding:0;
   background-color: #202026;
+  width: 1200px;
 }
 .education{
   display: flex;
@@ -26,26 +27,31 @@
   color: #ffffff;
   margin: 0;
   width: 100%;
+  font-size: 30px;
+  color: #000000;
 }
 .education__title::after{
   font-size: 25px;
   content: "";
   display: block;
   height: 3px;
-  background-color: #fecb00
+  background-color: #0000cc;
 }
 .edication__text{
   color: #ffffff;
   font-size: 21px;
   margin-bottom: 20px;
+  text-align: justify;
+  color: #000000;
 }
 .edication__text>p{
   font-size: 22px;
   margin-left: 10px;
+  margin: 0 ;
 }
 .education__link{
   font-size: 22px;
-  color: #fecb00;
+  color: #0000cc;
 }
 .education-school{
   margin: 10px 0 25px 0px;
@@ -67,7 +73,7 @@
 
 .skill__name{
   font-size: 20px;
-  color: #fecb00;
+  color: #0000cc;
   margin: 0;
   padding: 0;
 }
@@ -78,19 +84,19 @@
 }
 .contacts__link{
   font-size: 22px;
-  color: #fecb00;
-  width: 80px;
+  color: #0000cc;
+  width: 75px;
 }
 .main{
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   color: #000000;
-  width: 72.7%;
+  width: 71.4%;
 }
 .pet-projects{
-  margin: 0px 30px 150px 20px;
-}
+  margin: 0px 30px 80px 20px;
+} 
 .about{
   display: flex;
   flex-direction: column;
@@ -111,6 +117,7 @@
   font-size: 22px;
   margin-top: 15px;
   margin-bottom: 37px;
+  text-align: justify;
 }
 .about__languages{
   font-size: 25px;
@@ -132,7 +139,7 @@
   align-items: center;
   justify-content: center;
   width: 290px;
-  background-color: #202026;
+  background-color: #b3b3ff;
   border-radius: 0 0 25px 25px;
 
 }
@@ -157,9 +164,10 @@
 }
 .project__description{
   font-size: 19px;
-  background-color: #fecb00;
+  background-color: #0000cc;
   text-align: justify;
   padding: 10px 5px 5px 5px;
+  color: #ffffff;
 }
 .project__skills{
   display: flex;
@@ -172,27 +180,26 @@
   width: 45px;
 }
 .footer{
-  width: 72.7%;
+  width: 100%;
   display: flex;
   font-size: 40px;
   align-items: center;
   justify-content: space-around;
   height: 110px;
-  background-color: #fecb00;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  background-color: #0000cc;
 }
 .footer>p{
   margin: 0;
+  color: #ffffff;
 }
 .footer__view{
   width: 75px;
   transition: transform 0.3s ease-in-out,filter 0.3s ease-in-out;
+  filter: invert(99%) sepia(5%) saturate(44%) hue-rotate(322deg) brightness(115%) contrast(100%);
 }
 .footer__view:hover{
   transform: scale(1.1);
-  filter: invert(99%) sepia(5%) saturate(44%) hue-rotate(322deg) brightness(115%) contrast(100%);
+  filter: invert(0%) sepia(0%) saturate(7486%) hue-rotate(340deg) brightness(94%) contrast(106%);
 }
 @media (max-width: 920px) {
   .project{
@@ -202,7 +209,7 @@
     font-size: 30px;
   }
   .pet-projects{
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px 60px 10px;
   }
 }
 @media (max-width: 820px) {
@@ -224,8 +231,9 @@
   }
   .aside{
     width: 100%;
-    padding: 20px;
+    padding: 5px 5px 5px 5px;
     display: flex;
+    background-color: #ffffff;
   }
  .edication__text{
     text-align: justify;
@@ -258,12 +266,15 @@
   }
   .main{
     width: 100%;
-  }
-  .pet-projects{
-    margin-bottom: 150px;
+    padding: 5px;
   }
   .footer{
     width: 100%;
+    margin-bottom: -5px;
+    margin-left: -5px;
+  }
+  .header{
+    padding: 0px 0px 0px 0px;
   }
 }
 @media (max-width: 555px) {
@@ -291,6 +302,7 @@
   }
   .edication__text{
     font-size: 20px;
+    padding-right: 10px;
  }
   .edication__text>p{
     font-size: 20px;
@@ -307,6 +319,11 @@
   .skills-wrapper{
     padding: 0px 10px 0px 10px;
   }
+  .contacts-wrapper{
+    display: grid;;
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 10px;
+  }
 }
 @media (max-width: 367px){
   .about-information{
@@ -315,9 +332,6 @@
   .footer{
     height: 60px;
     font-size: 18px;
-  }
-  .pet-projects {
-    margin-bottom: 100px;
   }
   .footer__view{
     width: 35px;
