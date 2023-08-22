@@ -95,7 +95,7 @@
   width: 71.4%;
 }
 .pet-projects{
-  margin: 0px 30px 80px 20px;
+  margin: 0px 20px 80px 30px;
 } 
 .about{
   display: flex;
@@ -128,11 +128,15 @@
   font-size: 20px;
 }
 .projects-wrapper{
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
+  display: grid;
+  align-items:flex-start;
+  justify-content: center;
+  grid-template-columns: repeat(2,1fr);
   margin-top: 20px;
+  row-gap: 20px;
+  column-gap: 10px;
 }
+
 .project{
   display: flex;
   flex-direction: column;
@@ -282,8 +286,10 @@
     width: 40%;
   }
   .projects-wrapper{
+    display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
   }
   .footer__view{
     width: 60px;
@@ -302,7 +308,6 @@
   }
   .edication__text{
     font-size: 20px;
-    padding-right: 10px;
  }
   .edication__text>p{
     font-size: 20px;
